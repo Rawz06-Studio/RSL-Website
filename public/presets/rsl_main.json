@@ -1,11 +1,11 @@
 {
     "options": {
-        "bridge_tokens_max": 50,
-        "ganon_bosskey_tokens_max": 50,
+        "bridge_tokens_max": 100,
+        "ganon_bosskey_tokens_max": 100,
         "bridge_hearts_min": 4,
         "ganon_bosskey_hearts_min": 4,
-        "bridge_hearts_max": 10,
-        "ganon_bosskey_hearts_max": 10,
+        "bridge_hearts_max": 20,
+        "ganon_bosskey_hearts_max": 20,
         "triforce_goal_per_world_max": 100,
         "starting_items": true,
         "misc_hints": [
@@ -33,19 +33,12 @@
             "logic_lens_spirit",
             "logic_visible_collisions",
             "logic_deku_b1_webs_with_bow",
-            "logic_lens_gtg_mq",
-            "logic_lens_jabu_mq",
-            "logic_lens_shadow_mq",
-            "logic_lens_spirit_mq",
-            "logic_lens_shadow_mq",
-            "logic_lens_shadow_mq_platform",
             "logic_lens_shadow",
             "logic_lens_shadow_platform",
-            "logic_lens_shadow_mq_dead_hand",
-	        "logic_lens_bongo",
-            "logic_lens_castle_mq"
+	        "logic_lens_bongo"
         ],
-        "disabled_locations": []
+        "disabled_locations": [],
+        "advanced_tricks": []
     },
     "conditionals": {
         "constant_triforce_hunt_extras": [true],
@@ -58,7 +51,7 @@
         "exclude_mapcompass_info_remove": [true],
         "ohko_starts_with_nayrus": [true],
         "shuffle_valley_lake_exit": [true],
-        "select_one_pots_crates_freestanding": [false, "20%", "1/1/1", "1/1/1"],
+        "select_one_pots_crates_freestanding": [true, "20%", "1/1/1", "1/1/1"],
         "geometrically_draw_dungeon_shortcuts": [true],
         "limit_overworld_entrances_in_mixed_entrance_pools": [true, "20%"],
         "restrict_one_entrance_randomizer": [false],
@@ -73,13 +66,17 @@
         "key_rings": 20,
         "silver_rupee_pouches": 100,
         "dungeon_shortcuts": 0,
-        "mix_entrance_pools": 0,
+        "mix_entrance_pools": 30,
         "spawn_positions": 50,
         "shuffle_child_trade": 20,
         "minor_items_as_major_chest": 0,
         "adult_trade_start": 100,
         "potcrate_textures_specific": 100,
-        "chest_textures_specific": 100
+        "chest_textures_specific": 100,
+        "ocarina_songs": 0,
+        "enhance_map_compass": 50,
+        "shuffle_fairies": 0,
+        "random_starting_items_exclude": 0
     },
     "weights": {
         "shuffle_loach_reward": {
@@ -101,7 +98,7 @@
         },
         "logic_rules": {
             "glitchless": 1,
-            "glitched": 0,
+            "advanced": 0,
             "none": 0
         },
         "shuffle_freestanding_items": {
@@ -127,9 +124,9 @@
             "false": 1
         },
         "shuffle_silver_rupees": {
-            "remove": 2,
-            "vanilla": 32,
-            "dungeon": 2,
+            "remove": 1,
+            "vanilla": 16,
+            "dungeon": 1,
             "overworld": 0,
             "any_dungeon": 0,
             "regional": 1,
@@ -169,12 +166,16 @@
         },
         "open_kakariko": {
             "open": 1,
-            "zelda": 0,
-            "closed": 1
+            "zelda": 1,
+            "closed": 0
         },
         "open_door_of_time": {
-            "true": 1,
-            "false": 1
+            "open": 1,
+            "sot": 1,
+            "oot_sot": 0,
+            "stones": 0,
+            "stones_sot": 0,
+            "stones_oot_sot": 0
         },
         "zora_fountain": {
             "closed": 1,
@@ -183,14 +184,14 @@
         },
         "gerudo_fortress": {
             "normal": 1,
-            "fast": 2,
-            "open": 2
+            "fast": 1,
+            "open": 1
         },
         "bridge": {
             "open": 1,
-            "vanilla": 2,
-            "stones": 2,
-            "medallions": 2,
+            "vanilla": 1,
+            "stones": 1,
+            "medallions": 1,
             "dungeons": 1,
             "tokens": 0,
             "hearts": 0,
@@ -201,13 +202,13 @@
             "2": 1,
             "3": 2,
             "4": 2,
-            "5": 3,
-            "6": 5
+            "5": 4,
+            "6": 10
         },
         "bridge_stones": {
             "1": 1,
-            "2": 2,
-            "3": 3
+            "2": 4,
+            "3": 5
         },
         "bridge_rewards": {
             "1": 1,
@@ -218,7 +219,7 @@
             "6": 4,
             "7": 4,
             "8": 4,
-            "9": 5
+            "9": 20
         },
         "triforce_hunt": {
             "true": 1,
@@ -229,14 +230,14 @@
             "false": 1
         },
         "trials_random": {
-            "true": 0,
-            "false": 1
+            "true": 1,
+            "false": 0
         },
         "trials": {
-            "0": 2,
-            "1": 2,
-            "2": 2,
-            "3": 2,
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
             "4": 1,
             "5": 1,
             "6": 1
@@ -247,27 +248,27 @@
             "random": 1
         },
         "shuffle_interior_entrances": {
-            "off": 4,
-            "simple": 3,
+            "off": 2,
+            "simple": 1,
             "all": 1
         },
         "shuffle_grotto_entrances": {
             "true": 1,
-            "false": 2
+            "false": 1
         },
         "shuffle_dungeon_entrances": {
-            "off": 3,
-            "simple": 1,
-            "all": 0
+            "off": 9,
+            "simple": 9,
+            "all": 2
         },
         "shuffle_bosses": {
             "off": 4,
-            "limited": 1,
-            "full": 0
+            "limited": 0,
+            "full": 1
         },
         "shuffle_overworld_entrances": {
-            "true": 0,
-            "false": 1
+            "true": 1,
+            "false": 3
         },
         "decouple_entrances": {
             "true": 0,
@@ -322,7 +323,7 @@
             "12": 0
         },
         "shopsanity": {
-            "off": 7,
+            "off": 2,
             "0": 1,
             "1": 1,
             "2": 1,
@@ -331,23 +332,23 @@
             "random": 2
         },
         "tokensanity": {
-            "off": 3,
-            "dungeons": 1,
-            "overworld": 1,
-            "all": 0
+            "off": 6,
+            "dungeons": 5,
+            "overworld": 5,
+            "all": 4
         },
         "shuffle_scrubs": {
-            "off": 6,
+            "off": 5,
             "low": 5,
-            "regular": 1,
-            "random": 0
+            "regular": 3,
+            "random": 2
         },
         "shuffle_cows": {
             "true": 1,
-            "false": 2
+            "false": 1
         },
         "shuffle_song_items": {
-            "song": 6,
+            "song": 4,
             "dungeon": 2,
             "any": 4
         },
@@ -386,11 +387,11 @@
             "regional": 1
         },
         "shuffle_smallkeys": {
-            "remove": 3,
-            "vanilla": 3,
-            "dungeon": 3,
-            "overworld": 0,
-            "any_dungeon": 0,
+            "remove": 2,
+            "vanilla": 2,
+            "dungeon": 2,
+            "overworld": 1,
+            "any_dungeon": 1,
             "keysanity": 2,
             "regional": 1
         },
@@ -403,13 +404,13 @@
             "fortress": 0
         },
         "shuffle_bosskeys": {
-            "remove": 3,
-            "vanilla": 3,
-            "dungeon": 3,
+            "remove": 2,
+            "vanilla": 2,
+            "dungeon": 2,
             "overworld": 0,
             "any_dungeon": 0,
             "keysanity": 2,
-            "regional": 1
+            "regional": 2
         },
         "shuffle_ganon_bosskey": {
             "remove": 3,
@@ -431,13 +432,13 @@
             "2": 1,
             "3": 2,
             "4": 2,
-            "5": 3,
-            "6": 5
+            "5": 4,
+            "6": 10
         },
         "ganon_bosskey_stones": {
             "1": 1,
-            "2": 2,
-            "3": 3
+            "2": 4,
+            "3": 5
         },
         "ganon_bosskey_rewards": {
             "1": 1,
@@ -448,11 +449,7 @@
             "6": 4,
             "7": 4,
             "8": 4,
-            "9": 5
-        },
-        "enhance_map_compass": {
-            "true": 1,
-            "false": 1
+            "9": 20
         },
         "reachable_locations": {
             "all": 1,
@@ -464,16 +461,16 @@
             "false": 1
         },
         "no_escape_sequence": {
-            "true": 2,
-            "false": 1
+            "true": 3,
+            "false": 2
         },
         "no_guard_stealth": {
             "true": 1,
             "false": 0
         },
         "no_epona_race": {
-            "true": 1,
-            "false": 0
+            "true": 3,
+            "false": 2
         },
         "skip_some_minigame_phases": {
             "true": 1,
@@ -487,9 +484,10 @@
             "true": 1,
             "false": 0
         },
-        "free_scarecrow": {
-            "true": 2,
-            "false": 1
+        "scarecrow_behavior": {
+            "vanilla": 0,
+            "fast": 1,
+            "free": 1
         },
         "chicken_count_random": {
             "true": 1,
@@ -500,43 +498,37 @@
             "false": 1
         },
         "plant_beans": {
-            "true": 1,
-            "false": 1
+            "true": 3,
+            "false": 7
         },
         "chicken_count": {
             "0": 1,
             "1": 1,
-            "2": 2,
-            "3": 3,
-            "4": 3,
-            "5": 2,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
             "6": 1,
             "7": 1
         },
         "big_poe_count_random": {
-            "true": 0,
-            "false": 1
+            "true": 1,
+            "false": 0
         },
         "big_poe_count": {
-            "1": 512,
-            "2": 256,
-            "3": 128,
-            "4": 64,
-            "5": 32,
-            "6": 16,
-            "7": 8,
-            "8": 4,
-            "9": 2,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1,
             "10": 1
         },
-        "ocarina_songs": {
-            "off": 1,
-            "frog": 0,
-            "warp": 0,
-            "all": 0
-        },
         "correct_chest_appearances": {
-            "off": 2,
+            "off": 4,
             "textures": 3,
             "both": 3,
             "classic": 0
@@ -545,21 +537,27 @@
             "true": 0,
             "false": 1
         },
-        "shopsanity_prices": {
-            "random": 1,
-            "random_starting": 1,
-            "random_adult": 0,
-            "random_giant": 0,
-            "random_tycoon": 0,
-            "affordable": 4
+        "special_deal_price_distribution": {
+            "vanilla": 0,
+            "betavariate": 0,
+            "uniform": 1
+        },
+        "special_deal_price_min": {
+            "0": 1
+        },
+        "special_deal_price_max": {
+            "10": 1,
+            "95": 1,
+            "200": 1,
+            "500": 0
         },
         "fast_bunny_hood": {
             "true": 1,
             "false": 0
         },
         "blue_fire_arrows": {
-            "true": 1,
-            "false": 1
+            "true": 3,
+            "false": 7
         },
         "easier_fire_arrow_entry": {
             "true": 0,
@@ -624,9 +622,9 @@
         },
         "damage_multiplier": {
             "half": 3,
-            "normal": 20,
-            "double": 6,
-            "quadruple": 0,
+            "normal": 10,
+            "double": 5,
+            "quadruple": 2,
             "ohko": 0
         },
         "deadly_bonks": {
@@ -657,22 +655,22 @@
             "plentiful": 4,
             "balanced": 19,
             "scarce": 11,
-            "minimal": 4,
+            "minimal": 6,
             "ludicrous": 0
         },
         "junk_ice_traps": {
             "off": 11,
             "normal": 5,
             "on": 3,
-            "mayhem": 0,
+            "mayhem": 1,
             "onslaught": 0,
             "custom_count": 0,
             "custom_percent": 0
         },
         "ice_trap_appearance": {
-            "major_only": 0,
+            "major_only": 1,
             "junk_only": 1,
-            "anything": 0
+            "anything": 1
         },
         "start_with_consumables": {
             "true": 1,
@@ -707,7 +705,7 @@
             "false": 1
         },
         "key_appearance_match_dungeon": {
-            "true": 2,
+            "true": 0,
             "false": 1
         },
         "shuffle_individual_ocarina_notes": {
@@ -715,12 +713,12 @@
             "false": 9
         },
         "ruto_already_f1_jabu": {
-            "true": 2,
+            "true": 1,
             "false": 1
         },
         "shuffle_enemy_spawns": {
-            "off": 18,
-            "all": 0,
+            "off": 17,
+            "all": 1,
             "bosses": 1,
             "regional": 1
         },
@@ -737,10 +735,6 @@
             "false": 1
         },
         "prevent_guay_respawns": {
-            "true": 0,
-            "false": 1
-        },
-        "shuffle_gossipstones": {
             "true": 0,
             "false": 1
         },
@@ -792,6 +786,48 @@
             "overworld": 0,
             "any_dungeon": 0,
             "anywhere": 0
+        },
+        "fast_shadow_boat": {
+            "true": 0,
+            "false": 1
+        },
+        "shuffle_gerudo_fortress_heart_piece": {
+            "remove": 0,
+            "vanilla": 1,
+            "shuffle": 0
+        },
+        "shuffle_ganon_tower": {
+            "true": 0,
+            "false": 1
+        },
+        "tcg_requires_lens": {
+            "true": 1,
+            "false": 0
+        },
+        "golden_boulders": {
+            "true": 0,
+            "false": 1
+        },
+        "shuffle_100_skulltula_rupee": {
+            "true": 0,
+            "false": 1
+        },
+        "add_random_starting_items": {
+            "true": 0,
+            "false": 1
+        },
+        "random_starting_items_count": {
+            "0": 1,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
         }
     }
 }
