@@ -9,8 +9,7 @@ jobs:
   release:
     uses: RawZ06-Studio/.github/.github/workflows/node-ci-release.yml@main
     permissions:
-      contents: write   # Nécessaire pour les tags/releases
-      packages: write   # Nécessaire pour Docker/Maven/NPM
+      contents: write
     with:
       publishable: false       # application, pas de publish npm
 
