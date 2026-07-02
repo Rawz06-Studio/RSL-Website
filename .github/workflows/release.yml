@@ -12,17 +12,15 @@ jobs:
       contents: write
     with:
       publishable: false       # application, pas de publish npm
-    secrets:
-      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
-      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+    secrets: inherit
 
   docker:
     needs: release
     uses: RawZ06-Studio/.github/.github/workflows/docker-build-push.yml@main
+    permissions:
+      contents: write   # Nécessaire pour les tags/releases
+      packages: write   # Nécessaire pour Docker/Maven/NPM
     with:
       image_name: rslwebsite
       dokploy_app_id: wwDBWzd4QNn2u4UKJF3Ul
-    secrets:
-      NEXUS_LOGIN: ${{ secrets.NEXUS_LOGIN }}
-      NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
-      DOKPLOY_TOKEN: ${{ secrets.DOKPLOY_TOKEN }}
+    secrets: inherit
