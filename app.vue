@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+const version = runtimeConfig.public.version;
+</script>
 
 <template>
   <UHeader>
@@ -35,6 +38,7 @@
         >
           MIT License
         </NuxtLink>
+        - v{{ version }}
       </p>
     </template>
 
