@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { parseValues } from "~/core/parse-values";
-import { useSettingsStore } from "~/core/settings-store";
+import { settings } from "~/core/settings";
 
 type StringObject = {
   [key: string]: string | number | StringObject;
@@ -8,8 +8,6 @@ type StringObject = {
 const props = defineProps<{
   weights: StringObject;
 }>();
-const settingsStore = useSettingsStore();
-const settings = settingsStore.settings;
 const allItems = props.weights
   ? Object.entries(props.weights as StringObject).map(([k, v]) => {
       const content = parseValues(v as Record<string, number>);

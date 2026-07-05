@@ -1,18 +1,12 @@
 <script setup lang="ts">
 import PresetList from "~/components/PresetList.vue";
-import { useSettingsStore } from "~/core/settings-store";
+import DiscordBotInformation from "~/components/DiscordBotInformation.vue";
 import { useMobile } from "~/hooks/useMobile";
-import { useHelpStore } from "~/core/help-store";
+import { PRESETS } from "~/core/preset-list";
 
-const { data, status } = await useAsyncData<string[]>("presets", () =>
-  $fetch(`/api/preset`),
-);
+const data = ref(Object.keys(PRESETS));
+const status = ref('success');
 
-// Utiliser le store pour initialiser les données
-const settingsStore = useSettingsStore();
-await settingsStore.fetchSettings();
-const helpStore = useHelpStore();
-await helpStore.fetchHelp();
 const tabs = data.value?.map((item) => ({ label: item, key: item }));
 const isMobile = useMobile();
 </script>

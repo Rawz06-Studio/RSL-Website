@@ -1,14 +1,17 @@
 <script setup lang="ts">
 import PresetWeightList from "~/components/PresetWeightList.vue";
+import { presetVerifier } from "~/core/preset-verifier";
+import { presetReader } from "~/core/preset-reader";
+
 type StringObject = {
   [key: string]: string | number | StringObject;
 };
 const props = defineProps<{
   preset: string;
 }>();
-const { data } = await useAsyncData<StringObject>(props.preset, () =>
-  $fetch(`/api/preset/${props.preset}`),
-);
+
+const filename = presetVerifier(props.preset);
+const data = presetReader(filename) as any;
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-import { PRESETS } from "~/server/core/preset-list";
+import { PRESETS } from "~/core/preset-list";
 
 export function presetVerifier(
   name: string | undefined,

@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { useSettingsStore } from "~/core/settings-store";
+import { settings } from "~/core/settings";
 import ObjectPrinter from "~/components/ObjectPrinter.vue";
 
 type StringObject = {
   [key: string]: string | number | StringObject;
 };
-const settingsStore = useSettingsStore();
-const settings = settingsStore.settings;
 const props = defineProps<{
   item: StringObject;
 }>();

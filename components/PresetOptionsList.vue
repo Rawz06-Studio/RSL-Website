@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useSettingsStore } from "~/core/settings-store";
+import { settings } from "~/core/settings";
 
 type StringObject = {
   [key: string]: string | number | StringObject;
@@ -7,8 +7,6 @@ type StringObject = {
 const props = defineProps<{
   options: StringObject;
 }>();
-const settingsStore = useSettingsStore();
-const settings = settingsStore.settings;
 const items = props.options
   ? Object.entries(props.options as StringObject).map(([k, v]) => ({
       key: k,
