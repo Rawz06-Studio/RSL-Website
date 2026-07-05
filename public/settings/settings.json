@@ -140,6 +140,42 @@
   "triforce_goal_per_world_max": {
     "name": "Triforce Goal per World Maximum"
   },
+  "lacs_medallions_min": {
+    "name": "LACS Medallions Minimum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for medallions min)"
+  },
+  "lacs_medallions_max": {
+    "name": "LACS Medallions Maximum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for medallions max)"
+  },
+  "lacs_stones_min": {
+    "name": "LACS Stones Minimum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for stones min)"
+  },
+  "lacs_stones_max": {
+    "name": "LACS Stones Maximum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for stones max)"
+  },
+  "lacs_rewards_min": {
+    "name": "LACS Rewards Minimum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for rewards min)"
+  },
+  "lacs_rewards_max": {
+    "name": "LACS Rewards Maximum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for rewards max)"
+  },
+  "lacs_tokens_max": {
+    "name": "LACS Tokens Maximum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for tokens max)"
+  },
+  "lacs_hearts_min": {
+    "name": "LACS Hearts Minimum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for hearts min)"
+  },
+  "lacs_hearts_max": {
+    "name": "LACS Hearts Maximum",
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts. (Value for hearts max)"
+  },
   "conditionals": {
     "name": "Conditionals settings"
   },
@@ -148,6 +184,10 @@
   },
   "starting_items": {
     "name": "Starting Items"
+  },
+  "random_starting_items_exclude": {
+    "name": "Exclude Items from Random Starting Items",
+    "description": "Selections here will be excluded from the random starting item pool."
   },
   "output_types": {
     "name": "Output Types"
@@ -313,7 +353,7 @@
   },
   "lacs_condition": {
     "name": "LACS Condition",
-    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda.\n\n'Vanilla': Shadow and Spirit Medallions.'Stones': A configurable amount of Spiritual Stones.'Medallions': A configurable amount of Medallions.'Dungeon Rewards': A configurable amount of Dungeon Rewards.'Tokens': A configurable amount of Gold Skulltula Tokens.'Hearts': A configurable amount of hearts.        "
+    "description": "Sets the condition for the Light Arrow Cutscene check to give you the item from Zelda. 'Vanilla': Shadow and Spirit Medallions. 'Stones': A configurable amount of Spiritual Stones. 'Medallions': A configurable amount of Medallions. 'Dungeon Rewards': A configurable amount of Dungeon Rewards. 'Tokens': A configurable amount of Gold Skulltula Tokens. 'Hearts': A configurable amount of hearts."
   },
   "lacs_medallions": {
     "name": "Medallions Required for LACS",
@@ -371,6 +411,10 @@
     "name": "Ganon's Boss Key",
     "description": "'Remove': Ganon's Castle Boss Key is removed and the boss door in Ganon's Tower starts unlocked.\n\n'Vanilla': Ganon's Castle Boss Key will appear in the vanilla location.\n\n'Own Dungeon': Ganon's Castle Boss Key can only appear inside Ganon's Castle.\n\n'Regional': Ganon's Castle Boss Key can only appear in Hyrule Field, Lon Lon Ranch, Market, Temple of Time, Hyrule Castle, Outside Ganon's Castle and Inside Ganon's Castle.\n\n'Overworld Only': Ganon's Castle Boss Key can only appear outside of dungeons.\n\n'Any Dungeon': Ganon's Castle Boss Key can only appear inside of a dungeon, but not necessarily Ganon's Castle.\n\n'Anywhere': Ganon's Castle Boss Key can appear anywhere in the world.\n\n'Light Arrow Cutscene': Ganon's Castle Boss Key will appear on the Light Arrow Cutscene.\n\n'Stones': Ganon's Castle Boss Key will be awarded when reaching the target number of Spiritual Stones.\n\n'Medallions': Ganon's Castle Boss Key will be awarded when reaching the target number of Medallions.\n\n'Dungeon Rewards': Ganon's Castle Boss Key will be awarded when reaching the target number of Dungeon Rewards.\n\n'Tokens': Ganon's Castle Boss Key will be awarded when reaching the target number of Gold Skulltula Tokens.\n\n'Hearts': Ganon's Castle Boss Key will be awarded when reaching the target number of hearts.        "
   },
+  "shuffle_ganon_tower": {
+    "name": "Shuffle Ganon's Tower",
+    "description": "Shuffle the entrance from Ganon's Castle to Ganon's Tower, just behind the trials barrier, into the adult boss entrance pool if \"Shuffle Boss Entrances\" is set to \"Age-Restricted\", or the boss entrance pool if it's set to \"Full\". The entrance from Ganon's Tower to Ganondorf's boss room is never shuffled."
+  },
   "ganon_bosskey_medallions": {
     "name": "Medallions Required for Ganon's BK",
     "description": "Select the amount of Medallions required to receive Ganon's Castle Boss Key.        "
@@ -410,6 +454,10 @@
   "shuffle_tcgkeys": {
     "name": "Treasure Chest Game Keys",
     "description": "'Remove': All Treasure Chest Game keys will be removed and all doors will remained unlocked.\n\n'Vanilla': Treasure Chest Game keys will have vanilla behavior (one random per room). The minigame will also have vanilla behavior.\n\n'Regional': Treasure Chest Game keys can only appear in Hyrule Field, Lon Lon Ranch, the Market, the Temple of Time, Hyrule Castle, Outside Ganon's Castle, or inside Ganon's Castle.\n\n'Overworld Only': Treasure Chest Game keys can only appear outside of dungeons.\n\n'Any Dungeon': Treasure Chest Game keys can only appear inside of dungeons.\n\n'Anywhere': Treasure Chest Game keys can appear anywhere in the world.        "
+  },
+  "tcg_requires_lens": {
+    "name": "Treasure Chest Game Requires Lens",
+    "description": "Force the player to always lose the treasure chest game in the first room unless they have the Lens of Truth and a Magic Meter. Does not function if Treasure Chest Game small keys are shuffled."
   },
   "key_rings_choice": {
     "name": "Key Rings Mode",
@@ -462,6 +510,10 @@
   "gerudo_fortress": {
     "name": "Gerudo's Fortress",
     "description": "'Rescue One Carpenter': Only the bottom left carpenter, in the cell with a single torch, must be rescued. This cell can be save warped to from any room in the hideout. All but one of the Thieves' Hideout Keys are removed.\n\n'Open Gerudo's Fortress': The carpenters are rescued from the start of the game, and if 'Shuffle Gerudo Card' is disabled, the player starts with the Gerudo Card in the inventory allowing access to Gerudo Training Ground.        "
+  },
+  "shuffle_gerudo_fortress_heart_piece": {
+    "name": "Shuffle Gerudo Fortress Heart Piece",
+    "description": "There is an extra heart piece on the balcony above the jail in Gerudo's Fortress if accessed as child. Normally, this is not reachable without glitches, so it's not shuffled and not considered in logic. With the Thieves' Hideout entrances shuffled, it becomes reachable, so use this setting to decide how to handle that. 'Remove': The heart piece is completely removed from the game. There is no freestanding item to collect above the jail. 'Vanilla': The heart piece exists as an unshuffled heart piece. It is considered in logic for the purpose of heart win conditions. 'Shuffle': There is a shuffled item above the jail and the extra heart piece is shuffled into the item pool. Both are considered in logic."
   },
   "dungeon_shortcuts_choice": {
     "name": "Dungeon Boss Shortcuts Mode",
@@ -567,6 +619,10 @@
     "name": "Shuffle Boulders",
     "description": "Boulders (and red ice blocks) will be randomly shuffled around the world.        "
   },
+  "golden_boulders": {
+    "name": "Shuffle Golden Boulders",
+    "description": "Some of the silver boulders will be converted into gold boulders which require Gold Gauntlets in order to lift"
+  },
   "shuffle_song_items": {
     "name": "Shuffle Songs",
     "description": "This restricts where song items can appear.\n\n'Song Locations': Song will only appear at locations that normally teach songs. In Multiworld, songs will only appear in their own world.\n\n'Dungeon Rewards': Songs appear at the end of dungeons. For major dungeons, they will be at the boss heart container location. The remaining 4 songs are placed at:\n\n- Zelda's Lullaby Location- Ice Cavern's Serenade of Water Location- Bottom of the Well's Lens of Truth Location- Gerudo Training Ground's Ice Arrow Location\n\nIf some dungeons are pre-completed, songs that would have been located inside these dungeons are given for free along with the free dungeon rewards.\n\n'Anywhere': Songs can appear in any location.        "
@@ -579,9 +635,25 @@
     "name": "Shopsanity Prices",
     "description": "Controls the randomization of prices for shopsanity items. For more control, utilize the plandomizer.\n\n'Random': The default randomization. Shop prices for shopsanity items will range between 0 to 300 rupees, with a bias towards values slightly below the middle of the range, in multiples of 5.\n\n'X Wallet': Shop prices for shopsanity items will range between 0 and the specified wallet's maximum capacity, in multiples of 5.\n\n'Affordable': Shop prices for shopsanity items will be fixed to 10 rupees.        "
   },
+  "special_deal_price_distribution": {
+    "name": "Special Deal Price Distribution",
+    "description": "Controls how the prices for Special Deal items in shops are selected. For more control, utilize the plandomizer. 'Vanilla': Each item will be sold for the price of the item that appears in its slot in the vanilla game. 'Weighted': Shop prices will be biased towards slightly below the middle of the selected range, with very low or very high prices only appearing rarely. 'Uniform': Each price value in the selected range is equally likely."
+  },
+  "special_deal_price_min": {
+    "name": "Special Deal Price Minimum",
+    "description": "Select the minimum price in rupees for Special Deal items in shops. Prices will be selected randomly in multiples of 5 according to the \"Special Deal Price Distribution\" setting. Set this setting and \"Maximum Special Deal Price\" to the same value to give all Special Deals a fixed price."
+  },
+  "special_deal_price_max": {
+    "name": "Special Deal Price Maximum",
+    "description": "Select the maximum price in rupees for Special Deal items in shops. Prices will be selected randomly in multiples of 5 according to the \"Special Deal Price Distribution\" setting. Set this setting and \"Minimum Special Deal Price\" to the same value to give all Special Deals a fixed price."
+  },
   "tokensanity": {
     "name": "Tokensanity",
     "description": "Token reward from Gold Skulltulas are shuffled into the pool.\n\n'Dungeons Only': This only shuffles the GS locations that are with indungeons, increasing the value of most dungeons and making internal dungeon exploration more diverse.\n\n'Overworld Only': This only shuffles the GS locations that are outside of dungeons.\n\n'All Tokens': Effectively adds 100 new locations for items to appear.        "
+  },
+  "shuffle_100_skulltula_rupee": {
+    "name": "Shuffle 100 Skulltula Reward",
+    "description": "Enabling this adds the repeatable Huge Rupee reward from the Skulltula house to the item pool. This is obtained by collecting all 100 gold skulltulas."
   },
   "shuffle_scrubs": {
     "name": "Scrub Shuffle",
@@ -667,6 +739,14 @@
     "name": "Shuffle Fishing Game Fish",
     "description": "Fish shuffle?        "
   },
+  "shuffle_fairies": {
+    "name": "Shuffle Fairies",
+    "description": "Fairies will give shuffled items. Gossip Stones: Fairies spawned by playing Song of Storms, and any other Child Song. in front of gossip stones (2 checks) Butterflies: Holding a Deku Stick near butterflies will turn them into fairies. Fairy fountains: All fairies found in fairy fountainsand the fairies in Ganon's Castle Suns Song/Song of Storms: Fairies spawned by playing Suns Song or Song of Storms in certain spots. Includes Collossus Oasis fairies. Bean Plant: Playing Song of Storms on a soil patch after planting a Magic Bean will spawn 3 fairies."
+  },
+  "shuffle_fairies_choice": {
+    "name": "Shuffle Fairies Mode",
+    "description": "Select which types of fairies to shuffle. 'Off': No fairies are shuffled. 'Choice': Select specific types of fairies to shuffle. 'All': All types of fairies are shuffled. 'Random': A random selection of fairy types are shuffled."
+  },
   "shuffle_loach_reward": {
     "name": "Shuffle Hyrule Loach Reward",
     "description": "Enabling this shuffles the reward for catching the Hyrule Loach at the fishing pond into the item pool\n\nVanilla Behavior shuffles the reward for catching the loach but otherwise keeps all behavior the same as in the vanilla game. The loach will spawn every fourth play of the fishing minigame and the sinking lure will become available only after obtaining the fishing prize for link's current age.\n\nEasier Behavior shuffles the loach reward but also modifies some behavior in order to make the loach easier to catch. When enabled the loach will always spawn at the fishing pond, the sinking lure will be available immediately at all four possible positions and the child/adult fishing prizes are still obtainable if you use the sinking lure.        "
@@ -735,13 +815,21 @@
     "name": "Fast Chest Cutscenes",
     "description": "All chest animations are fast. If disabled, the animation time is slow for major items.        "
   },
+  "fast_shadow_boat": {
+    "name": "Fast Shadow Boat",
+    "description": "The boat sequence in Shadow Temple will be massively sped up. The two Stalfos will still fall on the boat, but you won't have time to fight them. For this reason, this setting cannot be enabled if Shuffle Enemy Drops is on."
+  },
   "free_scarecrow": {
     "name": "Free Scarecrow's Song",
     "description": "Pulling out the Ocarina near a spot at which Pierre can spawn will do so, without needing the song.        "
   },
+  "scarecrow_behavior": {
+    "name": "Scarecrow Behavior",
+    "description": "\"Fast\" will require setting the same song both as child and adult, but pulling out the Ocarina near a spot at which Pierre can spawn will do so, without needing the song. \"Free\" removes both the need to set the song first and to play the song to summon Pierre."
+  },
   "fast_bunny_hood": {
     "name": "Fast Bunny Hood",
-    "description": "The Bunny Hood mask behaves like it does in Majora's Mask and makes you go 1.5× faster.        "
+    "description": "The Bunny Hood mask behaves like it does in Majora's Mask and makes you go 1.5\u00d7 faster.        "
   },
   "auto_equip_masks": {
     "name": "Maintain Mask Equips through Scene Changes",
@@ -840,7 +928,7 @@
   "hint_dist_user": {},
   "misc_hints": {
     "name": "Misc. Hints",
-    "description": "This setting adds some hints at locations other than Gossip Stones:\n\nReading the Temple of Time altar as child will tell you the locations of the Spiritual Stones (unless Maps and CompassesGive Information is enabled).\n\nReading the Temple of Time altar as adult will tell you the locations of the Medallions (unless Maps and Compasses Give Informationis enabled), as well as the conditions for building the Rainbow Bridge and getting the Boss Key for Ganon's Castle.\n\nReading the diary of Dampé the gravekeeper as adult will tell you the location of one of the Hookshots.\n\nTalking to Ganondorf in his boss room will tell you the location of the Light Arrows. If this option is enabled and Ganondorf is reachable without Light Arrows, Gossip Stones will never hint the Light Arrows.\n\nPlaying a warp song will tell you where it leads. (If warp song destinations are vanilla, this is always enabled). The two Owls at Lake Hylia and Death Mountain that move you around will tell you where they go.\n\nTalking to a cursed House of Skulltula resident will tell you the reward they will give you for removing their curse.\n\nPlacing yourself on the log at Zora River where you play the songs for the frogs will tell you what the reward is for playing all six non warp songs.\n\nIf shuffled, right side items in the mask shop will be visible but not obtainable before completing the child trade quest. Mask of Truth's shelf slot is always visible.\n\nIf Shuffle Expensive Merchants is enabled, the three characters that sell a new item will tell what the reward is for buying their item. If Shuffle Magic Beans is enabled, the Magic bean salesman will tell what the reward is for buying the 60 Rupees item.        "
+    "description": "This setting adds some hints at locations other than Gossip Stones:\n\nReading the Temple of Time altar as child will tell you the locations of the Spiritual Stones (unless Maps and CompassesGive Information is enabled).\n\nReading the Temple of Time altar as adult will tell you the locations of the Medallions (unless Maps and Compasses Give Informationis enabled), as well as the conditions for building the Rainbow Bridge and getting the Boss Key for Ganon's Castle.\n\nReading the diary of Damp\u00e9 the gravekeeper as adult will tell you the location of one of the Hookshots.\n\nTalking to Ganondorf in his boss room will tell you the location of the Light Arrows. If this option is enabled and Ganondorf is reachable without Light Arrows, Gossip Stones will never hint the Light Arrows.\n\nPlaying a warp song will tell you where it leads. (If warp song destinations are vanilla, this is always enabled). The two Owls at Lake Hylia and Death Mountain that move you around will tell you where they go.\n\nTalking to a cursed House of Skulltula resident will tell you the reward they will give you for removing their curse.\n\nPlacing yourself on the log at Zora River where you play the songs for the frogs will tell you what the reward is for playing all six non warp songs.\n\nIf shuffled, right side items in the mask shop will be visible but not obtainable before completing the child trade quest. Mask of Truth's shelf slot is always visible.\n\nIf Shuffle Expensive Merchants is enabled, the three characters that sell a new item will tell what the reward is for buying their item. If Shuffle Magic Beans is enabled, the Magic bean salesman will tell what the reward is for buying the 60 Rupees item.        "
   },
   "text_shuffle": {
     "name": "Text Shuffle",
@@ -849,6 +937,10 @@
   "damage_multiplier": {
     "name": "Damage Multiplier",
     "description": "Changes the amount of damage taken.\n\n'OHKO': Link dies in one hit.        "
+  },
+  "gloom": {
+    "name": "Gloom",
+    "description": "When enabled, every time the player takes damage, their overall health is reduced by one heart."
   },
   "deadly_bonks": {
     "name": "Bonks Do Damage",
@@ -1188,5 +1280,9 @@
   "sfx_get_small_item": {
     "name": "Get Refill",
     "description": "Change the sound when you get a small refill (ammo or recovery heart).        "
+  },
+  "enemizer": {
+    "name": "Enemizer",
+    "description": "Randomize Enemies Off:        Vanilla enemy layout Static:     Enemies will be shuffled when the seed is generated and will remain the same for the duration of the scene. This setting has logic to check that enemies can be defeated Dynamic:    Enemies will shuffle every time you reload a room. This is mostly experimental and has no way to guarantee that the player can defeat all of the enemies in a given room. If a room is broken, try holding the secret button sequence while loading the room."
   }
 }
