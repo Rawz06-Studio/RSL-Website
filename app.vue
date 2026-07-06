@@ -17,7 +17,7 @@ const version = runtimeConfig.public.version;
   <UMain>
     <UContainer
       :ui="{
-        root: 'min-h-[calc(100vh-2*var(--header-height))] h-[1px] overflow-scroll',
+        root: 'min-h-[calc(100vh-2*var(--header-height))]',
       }"
     >
       <NuxtLayout>

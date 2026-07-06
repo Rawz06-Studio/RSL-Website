@@ -24,6 +24,6 @@ export default defineNuxtConfig({
       openAPI: true,
     },
   },
-  ssr: false,
+  ssr: true,
   css: ["~/assets/css/main.css"],
 });

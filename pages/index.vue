@@ -5,10 +5,14 @@ import { useMobile } from "~/hooks/useMobile";
 import { PRESETS } from "~/core/preset-list";
 
 const data = ref(Object.keys(PRESETS));
-const status = ref('success');
+const status = ref("success");
 
-const tabs = data.value?.map((item) => ({ label: item, key: item }));
+const tabs = computed(() =>
+    data.value?.map((item) => ({ label: item, value: item })),
+);
 const isMobile = useMobile();
+
+const selectedTab = ref(tabs.value[0]?.value);
 </script>
 
 <template>
@@ -16,12 +20,24 @@ const isMobile = useMobile();
     <DiscordBotInformation />
     <template v-if="data && status == 'success'">
       <UTabs
-        :items="tabs"
-        class="w-full"
-        :orientation="isMobile ? 'vertical' : 'horizontal'"
+          v-model="selectedTab"
+          :items="tabs"
+          class="w-full"
+          :orientation="isMobile ? 'vertical' : 'horizontal'"
+          :ui="{
+          trigger: 'data-[state=active]:bg-green-500 rounded-md transition-colors duration-300',
+          indicator: 'bg-green-500 transition-all duration-300',
+        }"
       >
+        <template #default="{ item }">
+          <span>
+            {{ item.label }}
+          </span>
+        </template>
         <template #content="{ item }">
-          <PresetList :preset="item.key" />
+          <div class="outline-none">
+            <PresetList :preset="item.value" />
+          </div>
         </template>
       </UTabs>
     </template>
