@@ -8,7 +8,7 @@ const data = ref(Object.keys(PRESETS));
 const status = ref("success");
 
 const tabs = computed(() =>
-    data.value?.map((item) => ({ label: item, value: item })),
+  data.value?.map((item) => ({ label: item, value: item })),
 );
 const isMobile = useMobile();
 
@@ -20,14 +20,17 @@ const selectedTab = ref(tabs.value[0]?.value);
     <DiscordBotInformation />
     <template v-if="data && status == 'success'">
       <UTabs
-          v-model="selectedTab"
-          :items="tabs"
-          class="w-full"
-          :orientation="isMobile ? 'vertical' : 'horizontal'"
-          :ui="{
+        v-model="selectedTab"
+        :items="tabs"
+        class="w-full"
+        :orientation="isMobile ? 'vertical' : 'horizontal'"
+        :ui="{
           wrapper: isMobile ? 'flex flex-row gap-4' : 'flex flex-col gap-4',
-          list: isMobile ? 'sticky top-16 self-start z-10 bg-white dark:bg-gray-900' : 'sticky top-16 z-10 bg-white dark:bg-gray-900',
-          trigger: 'data-[state=active]:bg-green-500 rounded-md transition-colors duration-300',
+          list: isMobile
+            ? 'sticky top-16 self-start z-10 bg-white dark:bg-gray-900'
+            : 'sticky top-16 z-10 bg-white dark:bg-gray-900',
+          trigger:
+            'data-[state=active]:bg-green-500 rounded-md transition-colors duration-300',
           indicator: 'bg-green-500 transition-all duration-300',
         }"
       >
