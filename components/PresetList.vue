@@ -3,27 +3,24 @@ import PresetWeightList from "~/components/PresetWeightList.vue";
 import { presetVerifier } from "~/core/preset-verifier";
 import { presetReader } from "~/core/preset-reader";
 
-type StringObject = {
-  [key: string]: string | number | StringObject;
-};
 const props = defineProps<{
   preset: string;
 }>();
 
 const filename = presetVerifier(props.preset);
-const data = presetReader(filename) as any;
+const data = presetReader(filename);
 </script>
 
 <template>
   <div>
     <h1 class="text-xl font-bold my-2">Options</h1>
-    <PresetOptionsList :options="data?.options as StringObject" />
+    <PresetOptionsList :options="data?.options" />
     <h1 class="text-xl font-bold my-2">Conditionals</h1>
-    <PresetConditionalList :item="data?.conditionals as StringObject" />
+    <PresetConditionalList :item="data?.conditionals" />
     <h1 class="text-xl font-bold my-2">Multiselect</h1>
-    <PresetMultiSelectList :multiselect="data?.multiselect as StringObject" />
+    <PresetMultiSelectList :multiselect="data?.multiselect" />
     <h1 class="text-xl font-bold my-2">Weights</h1>
-    <PresetWeightList :weights="data?.weights as StringObject" />
+    <PresetWeightList :weights="data?.weights" />
   </div>
 </template>
 
