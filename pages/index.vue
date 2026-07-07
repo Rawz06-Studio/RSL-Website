@@ -25,6 +25,8 @@ const selectedTab = ref(tabs.value[0]?.value);
           class="w-full"
           :orientation="isMobile ? 'vertical' : 'horizontal'"
           :ui="{
+          wrapper: isMobile ? 'flex flex-row gap-4' : 'flex flex-col gap-4',
+          list: isMobile ? 'sticky top-16 self-start z-10 bg-white dark:bg-gray-900' : 'sticky top-16 z-10 bg-white dark:bg-gray-900',
           trigger: 'data-[state=active]:bg-green-500 rounded-md transition-colors duration-300',
           indicator: 'bg-green-500 transition-all duration-300',
         }"
