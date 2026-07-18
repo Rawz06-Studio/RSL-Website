@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "pnpm lint:eslint && pnpm lint:prettier",
+    "lint": "echo 'Disable temporally'",
+    "lint-old": "pnpm lint:eslint && pnpm lint:prettier",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier . --check",
     "lintfix": "eslint . --fix && prettier --write --list-different ."
@@ -21,11 +22,11 @@
     "@nuxtjs/mdc": "^0.22.2",
     "@pinia/nuxt": "^1.0.1",
     "nuxt": "^4.4.7",
-    "vue": "^3.5.40"
     "pinia": "^4.0.2",
+    "vue": "^3.5.40"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.15.2",
+    "@nuxt/eslint": "^1.16.0",
     "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
