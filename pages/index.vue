@@ -53,6 +53,7 @@ function isPresetDisabled(preset: string) {
           :color="compareMode ? 'primary' : 'neutral'"
           :variant="compareMode ? 'solid' : 'outline'"
           icon="i-heroicons-squares-2x2"
+          class="cursor-pointer"
           @click="toggleCompareMode"
         >
           Compare
@@ -75,7 +76,9 @@ function isPresetDisabled(preset: string) {
               :disabled="isPresetDisabled(preset)"
               :class="[
                 'transition-colors duration-200',
-                isPresetDisabled(preset) ? 'opacity-40 cursor-not-allowed' : '',
+                isPresetDisabled(preset)
+                  ? 'opacity-40 cursor-not-allowed'
+                  : 'cursor-pointer',
               ]"
               @click="togglePresetSelection(preset)"
             >
@@ -130,7 +133,7 @@ function isPresetDisabled(preset: string) {
               ? 'sticky top-16 self-start z-10 bg-white dark:bg-gray-900'
               : 'sticky top-16 z-10 bg-white dark:bg-gray-900',
             trigger:
-              'data-[state=active]:bg-green-500 rounded-md transition-colors duration-300',
+              'data-[state=active]:bg-green-500 rounded-md transition-colors duration-150 hover:bg-neutral-100 dark:hover:bg-neutral-800 cursor-pointer',
             indicator: 'bg-green-500 transition-all duration-300',
           }"
         >

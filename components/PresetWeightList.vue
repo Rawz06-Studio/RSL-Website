@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { parseValues } from "~/core/parse-values";
 import { settings } from "~/core/settings";
+import { accordionUi } from "~/core/ui-config";
 
 type StringObject = {
   [key: string]: string | number | StringObject;
@@ -51,7 +52,7 @@ const items = computed(() => {
         placeholder="Search..."
       />
     </div>
-    <UAccordion :items="items" multiple>
+    <UAccordion :items="items" multiple :ui="accordionUi">
       <template #default="{ item }">
         <div class="flex items-center gap-2">
           <span>{{ item.label }}</span>
