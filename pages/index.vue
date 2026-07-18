@@ -76,7 +76,9 @@ function isPresetDisabled(preset: string) {
               :disabled="isPresetDisabled(preset)"
               :class="[
                 'transition-colors duration-200',
-                isPresetDisabled(preset) ? 'opacity-40 cursor-not-allowed' : '',
+                isPresetDisabled(preset)
+                  ? 'opacity-40 cursor-not-allowed'
+                  : 'cursor-pointer',
               ]"
               @click="togglePresetSelection(preset)"
             >

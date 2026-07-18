@@ -2,6 +2,7 @@
 import { presetReader } from "~/core/preset-reader";
 import { presetVerifier } from "~/core/preset-verifier";
 import { settings } from "~/core/settings";
+import { accordionUi } from "~/core/ui-config";
 
 const props = defineProps<{
   preset1: string;
@@ -56,7 +57,7 @@ const hasDiffs = computed(() =>
       <div v-for="section in diffsBySection" :key="section.key">
         <template v-if="section.diffs.length > 0">
           <h1 class="text-xl font-bold my-2">{{ section.label }}</h1>
-          <UAccordion :items="section.diffs" multiple>
+          <UAccordion :items="section.diffs" multiple :ui="accordionUi">
             <template #body="{ item }">
               <div class="p-4 pt-0 grid grid-cols-2 gap-4">
                 <div>
