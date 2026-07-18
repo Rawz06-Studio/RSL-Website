@@ -10,7 +10,7 @@ const version = runtimeConfig.public.version;
     </template>
 
     <template #right>
-      <UColorModeButton />
+      <UColorModeButton class="cursor-pointer" />
     </template>
   </UHeader>
 

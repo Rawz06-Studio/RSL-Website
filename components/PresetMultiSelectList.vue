@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { settings } from "~/core/settings";
+import { accordionUi } from "~/core/ui-config";
 
 type StringObject = {
   [key: string]: string | number | StringObject;
@@ -18,7 +19,7 @@ const items = props.multiselect
 
 <template>
   <div>
-    <UAccordion :items="items" multiple>
+    <UAccordion :items="items" multiple :ui="accordionUi">
       <template #body="{ item }">
         <div class="p-4 pt-0">
           <div class="my-4">
