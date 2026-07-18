@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { settings } from "~/core/settings";
+import { accordionUi } from "~/core/ui-config";
 
 type StringObject = {
   [key: string]: string | number | StringObject;
@@ -18,14 +19,7 @@ const items = props.options
 
 <template>
   <div>
-    <UAccordion
-      :items="items"
-      multiple
-      :ui="{
-        trigger:
-          'hover:bg-neutral-100 dark:hover:bg-neutral-800 cursor-pointer transition-colors duration-150 rounded-md',
-      }"
-    >
+    <UAccordion :items="items" multiple :ui="accordionUi">
       <template #body="{ item }">
         <div class="p-4 pt-0">
           <span
