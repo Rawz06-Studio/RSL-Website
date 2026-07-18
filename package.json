@@ -21,7 +21,7 @@
     "@nuxtjs/mdc": "^0.22.1",
     "@pinia/nuxt": "^1.0.1",
     "nuxt": "^4.4.7",
-    "pinia": "^3.0.4",
+    "pinia": "^4.0.2",
     "vue": "^3.5.39"
   },
   "devDependencies": {
