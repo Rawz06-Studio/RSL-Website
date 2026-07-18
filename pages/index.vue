@@ -67,36 +67,32 @@ function isPresetDisabled(preset: string) {
             deselect it.
           </p>
           <div class="flex flex-wrap gap-3">
-            <UTooltip
+            <UButton
               v-for="preset in data"
               :key="preset"
-              :text="
-                isPresetDisabled(preset)
-                  ? 'Deselect a preset before selecting another'
-                  : ''
-              "
+              :color="isPresetSelected(preset) ? 'primary' : 'neutral'"
+              :variant="isPresetSelected(preset) ? 'solid' : 'outline'"
+              :disabled="isPresetDisabled(preset)"
+              :class="[
+                'transition-colors duration-200',
+                isPresetDisabled(preset) ? 'opacity-40 cursor-not-allowed' : '',
+              ]"
+              @click="togglePresetSelection(preset)"
             >
-              <UButton
-                :color="isPresetSelected(preset) ? 'primary' : 'neutral'"
-                :variant="isPresetSelected(preset) ? 'solid' : 'outline'"
-                :disabled="isPresetDisabled(preset)"
-                :class="[
-                  'transition-colors duration-200',
-                  isPresetDisabled(preset)
-                    ? 'opacity-40 cursor-not-allowed'
-                    : '',
-                ]"
-                @click="togglePresetSelection(preset)"
-              >
-                <UIcon
-                  v-if="isPresetSelected(preset)"
-                  name="i-heroicons-check"
-                  class="mr-1"
-                />
-                {{ preset }}
-              </UButton>
-            </UTooltip>
+              <UIcon
+                v-if="isPresetSelected(preset)"
+                name="i-heroicons-check"
+                class="mr-1"
+              />
+              {{ preset }}
+            </UButton>
           </div>
+          <p
+            v-if="compareSelection.length >= 2"
+            class="text-xs text-amber-500 mt-2"
+          >
+            Click a selected preset to deselect it before choosing another.
+          </p>
         </div>
 
         <template v-if="compareSelection.length === 2">
