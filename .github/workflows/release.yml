@@ -22,5 +22,5 @@ jobs:
       packages: write   # Nécessaire pour Docker/Maven/NPM
     with:
       image_name: rslwebsite
-      dokploy_app_id: wwDBWzd4QNn2u4UKJF3Ul
+      dokploy_app_id: E_kyKEB4_SgAkQ6j6OU2d
     secrets: inherit
