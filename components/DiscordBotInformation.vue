@@ -5,7 +5,7 @@
     <UCard>
       <template #header>
         <div class="flex items-center gap-2">
-          <UIcon name="i-logos-discord-icon" class="size-5" />
+          <UIcon name="i-simple-icons-discord" class="size-5" />
           <h3 class="font-bold">Use Discord RSLBeginnerBot</h3>
         </div>
       </template>
@@ -21,7 +21,7 @@
       <div class="mt-4">
         <UButton
           to="https://discord.com/users/1247572932151218188"
-          icon="i-logos-discord-icon"
+          icon="i-simple-icons-discord"
           size="sm"
           color="primary"
           variant="link"

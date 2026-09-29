@@ -50,7 +50,7 @@ const hasDiffs = computed(() =>
       v-if="!hasDiffs"
       class="flex items-center justify-center py-12 text-gray-500"
     >
-      <UIcon name="i-heroicons-check-circle" class="size-6 mr-2 text-success" />
+      <UIcon name="i-lucide-circle-check" class="size-6 mr-2 text-success" />
       <span>No differences found between these presets.</span>
     </div>
     <template v-else>

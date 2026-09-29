@@ -52,7 +52,7 @@ function isPresetDisabled(preset: string) {
         <UButton
           :color="compareMode ? 'primary' : 'neutral'"
           :variant="compareMode ? 'solid' : 'outline'"
-          icon="i-heroicons-squares-2x2"
+          icon="i-lucide-layout-grid"
           class="cursor-pointer"
           @click="toggleCompareMode"
         >
@@ -84,7 +84,7 @@ function isPresetDisabled(preset: string) {
             >
               <UIcon
                 v-if="isPresetSelected(preset)"
-                name="i-heroicons-check"
+                name="i-lucide-check"
                 class="mr-1"
               />
               {{ preset }}
@@ -108,7 +108,7 @@ function isPresetDisabled(preset: string) {
           <div
             class="flex items-center justify-center py-12 text-gray-400 border border-dashed rounded-lg"
           >
-            <UIcon name="i-heroicons-cursor-arrow-rays" class="size-5 mr-2" />
+            <UIcon name="i-lucide-mouse-pointer-click" class="size-5 mr-2" />
             <span>
               {{
                 compareSelection.length === 0
