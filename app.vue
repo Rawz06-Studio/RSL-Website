@@ -46,14 +46,14 @@ const version = runtimeConfig.public.version;
       <UButton
         to="https://discord.gg/QXvJAXdVTv"
         target="_blank"
-        icon="i-simple-icons-discord"
+        icon="i-lucide-message-circle"
         color="neutral"
         variant="ghost"
       />
       <UButton
         to="https://github.com/RawZ06"
         target="_blank"
-        icon="i-simple-icons-github"
+        icon="i-lucide-github"
         color="neutral"
         variant="ghost"
       />

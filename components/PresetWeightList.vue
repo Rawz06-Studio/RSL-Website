@@ -46,7 +46,7 @@ const items = computed(() => {
     <div class="my-5">
       <UInput
         v-model="searchValue"
-        icon="i-heroicons-magnifying-glass-20-solid"
+        icon="i-lucide-search"
         size="xl"
         color="primary"
         placeholder="Search..."
@@ -73,7 +73,7 @@ const items = computed(() => {
               <template #header>
                 <div class="flex items-center gap-2">
                   <UIcon
-                    name="i-heroicons-document-text-16-solid"
+                    name="i-lucide-file-text"
                     class="size-5"
                   />
                   <h3 class="font-bold">{{ item.label }}</h3>
