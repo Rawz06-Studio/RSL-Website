@@ -18,6 +18,11 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxtjs/mdc",
   ],
+  icon: {
+    serverBundle: {
+      collections: ["lucide"],
+    },
+  },
   nitro: {
     experimental: {
       openAPI: true,
