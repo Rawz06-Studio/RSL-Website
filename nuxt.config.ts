@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   ],
   icon: {
     serverBundle: {
-      collections: ["lucide"],
+      collections: ["lucide", "simple-icons"],
     },
   },
   nitro: {
